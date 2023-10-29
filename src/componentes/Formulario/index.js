@@ -6,8 +6,6 @@ import { useState } from 'react'
 
 const Formulario = (props) => {
 
-    //const times = ['Programação', 'Front End', 'Data Science', 'DevOps', 'UX e Design', 'Mobile', 'Inovação e Gestão']
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -22,14 +20,10 @@ const Formulario = (props) => {
             time
         }
         )
-
-        //props.aoColaboradorCadastrado({
-        //    nome: nome,
-        //    cargo: cargo,
-        //    imagem: imagem,
-        //    time: time
-        //}
-        //)
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return (
